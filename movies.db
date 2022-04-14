@@ -1,0 +1,19 @@
+-- creating a table
+create table movies(
+id int primary key not null,
+name text not null,
+hero text not null,
+heroine text not null,
+date numeric not null,
+director text not null
+);
+-- inserting values
+insert into movies values(1,'dune','timothee chalamet','zendaya','2021','Denis Villeneuve');
+insert into movies values(2,'spiderman','tom ','zendaya','2022','marvel');
+insert into movies values(3,'batman','christen bale','','2011','dc');
+insert into movies values(4,'titanic','leonardo','kate','1996','Denis Villeneuve');
+insert into movies values(5,'harry potter','daniel','emma','2001','Denis Vill');
+-- retrieval
+select * from movies where name='dune';
+
+select * from movies where hero='leonardo';
